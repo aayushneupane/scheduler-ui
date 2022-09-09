@@ -1,0 +1,106 @@
+
+
+##################################### Archives ###
+*.[trj][ga][zr]
+*.[t7]z
+*.bz2
+*.zip
+######################################### Logs ###
+*.log*
+*log.*
+logs/
+######################################## Linux ###
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+######################################## MacOS ###
+.DS_Store
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.AppleD*
+.apdisk
+######################################### Node ###
+*.log*
+*.seed*
+.node_repl_history
+node_modules/
+.npm
+.*cache
+1
+####################################### Python ###
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+MANIFEST
+*.manifest
+*.spec
+.venv
+venv/
+venv.bak/
+########################################## Vim ###
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+[._]*.un~
+Session.vim
+.netrwhist
+tags
+############################# VisualStudioCode ###
+.vscode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+###################################### Windows ###
+*[Tt]humbs.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.ms[mpi]*
+*.lnk
+##################################### Compiled ###
+target/
+build/
+dist/
+out/
+mjs/
+cjs/
+#################################### Utilities ###
+*.ignore.*
+*.bak
+########################################## AWS ###
+.serverless/
+.aws-sam/
+######################################## Vault ###
+.vaultsecret
+.vaultsecrets
+.vaultlocalrc
+###################################### Cordova ###
+.cordova/
+!.cordova/build.sh
+!.cordova/config.xml
+*.keystore
+########################################## Env ###
+.env*
+!.env.sample
+[Ee][Nn][Vv]/
+#################################### Terraform ###
+providers.tf
+backend.tf
+terraform.tfvars
+.terraform/
+######## Project-Specific Below This Line ########
