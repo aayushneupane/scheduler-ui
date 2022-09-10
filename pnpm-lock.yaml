@@ -2,7 +2,6 @@ lockfileVersion: 5.3
 
 specifiers:
   '@vitejs/plugin-vue': ^3.1.0
-  '@vue/composition-api': ^1.7.0
   node-sass: ^7.0.3
   sass-loader: ^13.0.2
   stylus: ^0.59.0
@@ -15,7 +14,6 @@ specifiers:
   vue-tsc: ^0.40.4
 
 dependencies:
-  '@vue/composition-api': 1.7.0_vue@3.2.38
   stylus: 0.59.0
   stylus-loader: 7.0.0_stylus@0.59.0
   vue: 3.2.38
@@ -214,14 +212,6 @@ packages:
     dependencies:
       '@vue/compiler-dom': 3.2.38
       '@vue/shared': 3.2.38
-
-  /@vue/composition-api/1.7.0_vue@3.2.38:
-    resolution: {integrity: sha512-hxOgLYR+wjuPX9bkP2pAPlqUs98XxBoa9DSLyp1z6+YR92wC42PZcZKs4d+VRtcv4udOv041Kss+F6ap5nj8YA==}
-    peerDependencies:
-      vue: '>= 2.5 < 2.7'
-    dependencies:
-      vue: 3.2.38
-    dev: false
 
   /@vue/devtools-api/6.2.1:
     resolution: {integrity: sha512-OEgAMeQXvCoJ+1x8WyQuVZzFo0wcyCmUR3baRVLmKBo1LmYZWMlRiXlux5jd0fqVJu6PfDbOrZItVqUEzLobeQ==}

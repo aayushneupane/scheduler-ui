@@ -9,7 +9,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@vue/composition-api": "^1.7.0",
     "stylus": "^0.59.0",
     "stylus-loader": "^7.0.0",
     "vue": "^3.2.37",
