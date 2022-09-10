@@ -28,7 +28,8 @@
 import { ref } from 'vue'
 import { UploadingFile, FileStatus } from '../models/File';
 import { UploadableFile } from '../models/UploadableFile';
-import {DropZone, FilePreview} from './index'
+import  DropZone from "./DropZone.vue"
+import  FilePreview  from "./FilePreview.vue"
 
 const files = ref<Array<UploadingFile>>([]);
 

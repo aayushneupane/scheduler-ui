@@ -1,1 +1,5 @@
-import { UploadableFile } from "./UploadableFile";
+import { UploadableFile } from './UploadableFile'
+
+export {
+  UploadableFile
+}

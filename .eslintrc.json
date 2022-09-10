@@ -1,0 +1,28 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:vue/vue3-essential",
+        "standard-with-typescript"
+    ],
+    "overrides": [
+    ],
+    "parserOptions": {
+      "parser": "@typescript-eslint/parser",
+      "project": "./tsconfig.json",
+      "ecmaVersion": 2020,
+      "sourceType": "module",
+      "extraFileExtensions": [
+        ".vue"
+      ]
+    },
+    "plugins": [
+        "vue",
+        "@typescript-eslint/eslint-plugin",
+        "eslint-plugin-vue"
+    ],
+    "rules": {
+    }
+}
