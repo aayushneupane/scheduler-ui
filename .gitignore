@@ -104,3 +104,6 @@ backend.tf
 terraform.tfvars
 .terraform/
 ######## Project-Specific Below This Line ########
+
+# Local Netlify folder
+.netlify
