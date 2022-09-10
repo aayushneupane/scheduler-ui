@@ -18,7 +18,6 @@ const props = defineProps({
 })
 defineEmits(['remove'])
 </script>
-<!--
 <style scoped lang="stylus">
 .file-preview {
 	width: 20%;
@@ -81,4 +80,4 @@ defineEmits(['remove'])
 		background: #fff;
 	}
 }
-</style> -->
+</style>

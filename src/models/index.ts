@@ -1,1 +1,1 @@
-import { UploadingFile } from "./UploadingFile";
+import { UploadableFile } from "./UploadableFile";
