@@ -22,7 +22,6 @@
     "sourceMap": true,
     "baseUrl": ".",
     "types": [
-      "node",
       "vite/client"
     ],
     "paths": {

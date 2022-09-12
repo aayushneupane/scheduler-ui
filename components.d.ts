@@ -7,6 +7,7 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    AuthForm: typeof import('./src/components/AuthForm.vue')['default']
     DefaultPage: typeof import('./src/components/DefaultPage.vue')['default']
     DropZone: typeof import('./src/components/DropZone.vue')['default']
     Dummy: typeof import('./src/components/Dummy.vue')['default']

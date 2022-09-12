@@ -1,7 +1,11 @@
-import { AboutPage } from "./About";
-import { HomePage } from "./Home"
+import { LoginPage, SignupPage } from './Auth'
+
+import { AboutPage } from './About'
+import { HomePage } from './Home'
 
 export {
   AboutPage,
-  HomePage
+  HomePage,
+  LoginPage,
+  SignupPage
 }

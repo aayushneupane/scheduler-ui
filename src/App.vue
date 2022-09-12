@@ -1,22 +1,17 @@
 <script setup lang="ts">
-import { LoginPage } from './pages/Auth'
+// import { LoginPage } from './pages/Auth'
 
-const token = ''
+// const token = ''
 </script>
 
 <template>
-  <router-view v-if="token"></router-view>
-  <LoginPage v-else></LoginPage>
+  <!-- <router-view v-if="token"></router-view>
+  <LoginPage v-else></LoginPage> -->
 
-  <!-- <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <DefaultPage msg="Vite + Vue" /> -->
+  <!-- <SignupPage /> -->
+  <router-view />
+  <div>Hello from App</div>
+
 </template>
 
 <style scoped>
