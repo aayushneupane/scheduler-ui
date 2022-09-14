@@ -1,12 +1,17 @@
 import { AboutPage, HomePage, LoginPage, SignupPage } from '../pages'
 import { createRouter, createWebHistory } from 'vue-router'
 
+import { getCurrentUser } from '../pages/Auth/utils'
+
 const routes = [
   {
     path: '/',
     name: 'Home',
     component: HomePage,
-    alias: '/home'
+    alias: '/home',
+    meta: {
+      requiresAuth: true
+    }
   },
   {
     path: '/about',
@@ -26,4 +31,16 @@ const routes = [
 ]
 
 const router = createRouter({ history: createWebHistory(), routes })
+router.beforeEach(async (to, from, next) => {
+  if (to.matched.some((record) => record.meta.requiresAuth)) {
+    if (await getCurrentUser() != null) {
+      next()
+    } else {
+      console.log('You dont have access!')
+      next('/login')
+    }
+  } else {
+    next()
+  }
+})
 export default router

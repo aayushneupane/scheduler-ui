@@ -1,18 +1,18 @@
 <template>
   <h1>Sign In</h1>
-  <form>
+  <!-- <form> -->
       <p><input type="email" placeholder="Email" v-model="email"></p>
       <p><input type="password" placeholder="Password" v-model="password"></p>
-      <p><button type="button" @click="register" value="Submit">Submit</button></p>
+      <p><button @click="register">Login</button></p>
       <p><button @click="signInWithGoogle">Sign in with Google</button></p>
       <p v-if="errorMsg">{{errorMsg}}</p>
-  </form>
+  <!-- </form> -->
   <AuthForm/>
   </template>
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import { getAuth, signInWithEmailAndPassword } from 'firebase/auth'
+import { getAuth, GoogleAuthProvider, signInWithEmailAndPassword, signInWithPopup } from 'firebase/auth'
 import { useRouter } from 'vue-router'
 import { FirebaseError } from 'firebase/app'
 import { generateErrorMessage } from './utils'
@@ -47,8 +47,20 @@ const register = async () => {
   }
 }
 
-const signInWithGoogle = () => {
+const signInWithGoogle = async () => {
   console.log('signInWIthGoogle clicked')
+  const provider = new GoogleAuthProvider()
+  try {
+    const loginRes = await signInWithPopup(getAuth(), provider)
+    console.log('user', loginRes.user)
+    router.push('/home')
+  } catch (err: any) {
+    if (err instanceof FirebaseError) {
+      console.log('Firebase signInWIthGoogle error:', err)
+    } else {
+      console.log('signInWIthGoogle error', err)
+    }
+  }
 }
 
 </script>

@@ -7,6 +7,7 @@ import {
   AUTH_WRONG_PASSWORD,
   AUTH_WRONG_PASSWORD_MSG
 } from '../../constants/auth'
+import { getAuth, onAuthStateChanged } from 'firebase/auth'
 
 import { FirebaseError } from 'firebase/app'
 
@@ -21,4 +22,18 @@ export const generateErrorMessage = function (error: FirebaseError): string {
     default:
       return AUTH_DEFAULT_MSG
   }
+}
+
+// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
+export const getCurrentUser = async () => {
+  return await new Promise((resolve, reject) => {
+    const removeListener = onAuthStateChanged(
+      getAuth(),
+      (user) => {
+        removeListener()
+        resolve(user)
+      },
+      reject
+    )
+  })
 }

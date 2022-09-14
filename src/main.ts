@@ -6,7 +6,7 @@ import { initializeApp } from 'firebase/app'
 import router from './router'
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyCOkw1f_KhkGcO21WvfEGk0BxtdLFDY2vo',
+  apiKey: '',
   authDomain: 'schedulr-125c3.firebaseapp.com',
   projectId: 'schedulr-125c3',
   storageBucket: 'schedulr-125c3.appspot.com',
