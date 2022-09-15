@@ -5,7 +5,6 @@ import { useRouter } from 'vue-router'
 import { FirebaseError } from 'firebase/app'
 const isLoggedIn = ref(false)
 const router = useRouter()
-// const token = ''
 let auth: Auth
 onMounted(() => {
   auth = getAuth()
@@ -40,10 +39,10 @@ const handleSignout = async () => {
     <router-link to ="/about">About | </router-link>
     <router-link to ="/login" v-if="!isLoggedIn" >Log In | </router-link>
     <router-link to ="/signup" v-if="!isLoggedIn" >Sign up | </router-link>
-    <!-- <router-link to ="">Sign Out</router-link> -->
     <button @click="handleSignout" v-if="isLoggedIn">Sign Out</button>
   </nav>
   <router-view />
+  <!-- Main modal -->
 
 </template>
 

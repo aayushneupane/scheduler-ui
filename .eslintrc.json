@@ -9,6 +9,11 @@
     ],
     "overrides": [
     ],
+    "ignorePatterns":[
+      "out",
+      "tailwind.config.cjs",
+      "postcss.config.cjs"
+    ],
     "parserOptions": {
       "parser": "@typescript-eslint/parser",
       "project": "./tsconfig.json",
@@ -21,7 +26,8 @@
     "plugins": [
         "vue",
         "@typescript-eslint/eslint-plugin",
-        "eslint-plugin-vue"
+        "eslint-plugin-vue",
+        "html"
     ],
     "rules": {
       // "semi": ["warn", "always"],
