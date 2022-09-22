@@ -11,6 +11,7 @@ declare module '@vue/runtime-core' {
     DropZone: typeof import('./src/components/DropZone.vue')['default']
     Dummy: typeof import('./src/components/Dummy.vue')['default']
     FilePreview: typeof import('./src/components/FilePreview.vue')['default']
+    NavBar: typeof import('./src/components/NavBar.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     UploadFile: typeof import('./src/components/UploadFile.vue')['default']

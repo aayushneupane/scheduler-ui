@@ -19,9 +19,10 @@ const routes = [
     component: AboutPage
   },
   {
-    path: '/login',
+    path: '/signin',
     name: 'Login',
-    component: LoginPage
+    component: LoginPage,
+    alias: '/signout'
   },
   {
     path: '/signup',

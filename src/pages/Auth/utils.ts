@@ -1,5 +1,7 @@
 import {
   AUTH_DEFAULT_MSG,
+  AUTH_EMAIL_IN_USE,
+  AUTH_EMAIL_IN_USE_MSG,
   AUTH_INVALID_EMAIL,
   AUTH_INVALID_EMAIL_MSG,
   AUTH_USER_NOT_FOUND,
@@ -19,6 +21,8 @@ export const generateErrorMessage = function (error: FirebaseError): string {
       return AUTH_USER_NOT_FOUND_MSG
     case AUTH_WRONG_PASSWORD:
       return AUTH_WRONG_PASSWORD_MSG
+    case AUTH_EMAIL_IN_USE:
+      return AUTH_EMAIL_IN_USE_MSG
     default:
       return AUTH_DEFAULT_MSG
   }
