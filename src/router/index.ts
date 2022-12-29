@@ -38,7 +38,7 @@ router.beforeEach(async (to, from, next) => {
       next()
     } else {
       console.log('You dont have access!')
-      next('/login')
+      next('/signin')
     }
   } else {
     next()
