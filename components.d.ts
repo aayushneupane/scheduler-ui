@@ -7,13 +7,17 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    Connections: typeof import('./src/components/connections/Connections.vue')['default']
+    ConnectionStatus: typeof import('./src/components/connections/ConnectionStatus.vue')['default']
     DefaultPage: typeof import('./src/components/DefaultPage.vue')['default']
     DropZone: typeof import('./src/components/DropZone.vue')['default']
     Dummy: typeof import('./src/components/Dummy.vue')['default']
     FilePreview: typeof import('./src/components/FilePreview.vue')['default']
+    InstagramConnection: typeof import('./src/components/connections/InstagramConnection.vue')['default']
     NavBar: typeof import('./src/components/NavBar.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    TwitterConnection: typeof import('./src/components/connections/TwitterConnection.vue')['default']
     UploadFile: typeof import('./src/components/UploadFile.vue')['default']
   }
 }

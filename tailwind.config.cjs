@@ -4,9 +4,11 @@ module.exports = {
   content: [
     "./index.html",
     "./src/**/*.{vue,js,ts,css}",
-    // "./node_modules/**/*.vue",
-    "./node_modules/flowbite/**/*.js"
-  ],  theme: {
+    './node_modules/flowbite/**/*.{js,jsx,ts,tsx}',
+    './node_modules/flowbite-vue/**/*.{js,jsx,ts,tsx}'
+
+  ],
+  theme: {
     extend: {},
   },
   plugins: [
